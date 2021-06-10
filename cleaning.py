@@ -8,6 +8,45 @@ def change(x: str, old_word: str, new_word: str) -> str:
     return re.sub(rf'\b{old_word}\b', new_word, x)
 
 
+def change_word(x: str):
+    try:
+        if 'LDN' in str(x):
+            return change(
+                str(x),
+                get_word(x) + ', LDN',
+                get_word(x)
+            )
+        if 'LDS' in str(x):
+            return change(
+                str(x),
+                get_word(x) + ', LDS',
+                get_word(x)
+            )
+        else:
+            return x
+    except Exception:
+        return x
+
+
+def get_list(x: str) -> list:
+    return str(x).split(sep=' ')
+
+
+def get_index(x: str) -> int:
+    if 'LDN' in str(x):
+        return get_list(x).index('LDN') - 1
+    if 'LDS' in str(x):
+        return get_list(x).index('LDS') - 1
+
+
+def get_word(x: str) -> str:
+    return (
+        get_list(x)[get_index(x)]
+        .strip()
+        .replace(',', '')
+    )
+
+
 def main():
 
     # Import data
@@ -63,19 +102,26 @@ def main():
             if str(x).startswith('Medical')
             else x
         )
+        .apply(change_word)
         .apply(
-            lambda x: change(str(x), 'Kauswagan', 'Kauswagan, LDN')
-            if 'Kauswagan' in str(x) and 'LDN' not in str(x)
-            else x
+            lambda x: change(
+                str(x),
+                'Cagayan de Oro',
+                'CDO'
+            )
+        )
+        .replace(
+            'Travel History; CDO',
+            'Travel History: CDO'
         )
     )
+
+    # Export data to csv
+    df.to_csv('data_cleaned.csv', index=False)
 
 
 if __name__ == '__main__':
     main()
-
-# string = str(x).split(sep=', ')
-# lambda x: change(str(x), string[0], string)
 
 
 # Unique values checker without the 'IC' patterns
@@ -84,4 +130,4 @@ if __name__ == '__main__':
 # FIXME: Age (0.25, 0.4, 0.8)
 # FIXME: Workplace Contamination, Facility Cross Contamination, Cross Contamination
 # FIXME: Does 'From Cebu' mean 'COVID-19 POSITIVE from Cebu' or 'Travel History: Cebu', similarly with others
-
+# FIXME: Detect 'LDN' then get its neighbor
