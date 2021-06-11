@@ -83,7 +83,7 @@ IC-0080,,Poblacion,,,Iligan,25.0,Female,LOCAL,IC-0069,Asymptomatic,Hospital,2020
 IC-0081,,Tubod,,,Iligan,66.0,Male,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0082,,Tubod,,,Iligan,60.0,Female,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0083,,Del Carmen,,,Iligan,28.0,Male,LSI,Unknown,Symptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 11:07:50.540024
-IC-0084,,Saray,,,Iligan,46.0,Female,LOCAL,"IC-52, IC-59",Asymptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
+IC-0084,,Saray,,,Iligan,46.0,Female,LOCAL,"IC-0052, IC-0059",Asymptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0085,,Saray,,,Iligan,64.0,Female,LOCAL,IC-0069,Asymptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0086,,Suarez,,,Iligan,35.0,Female,LOCAL,IC-0069,Asymptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 11:54:05.235325
 IC-0087,,Poblacion,,,Iligan,21.0,Female,LOCAL,IC-0069,Asymptomatic,Isolation Facility,2020-08-09,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
@@ -169,7 +169,7 @@ IC-0167,,Pala-o,,,Iligan,58.0,Female,LOCAL,Under Investigation,Symptomatic,Hospi
 IC-0168,,Bonbonon,,,Iligan,41.0,Female,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-19,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 11:09:11.603544
 IC-0169,,Tubod,,,Iligan,35.0,Male,ROF,Under Investigation,Asymptomatic,Isolation Facility,2020-08-19,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0170,,Buruun,,,Iligan,31.0,Male,LOCAL,IC-0122,Asymptomatic,Isolation Facility,2020-08-19,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
-IC-0171,,Hinaplanon,,,Iligan,22.0,Male,LOCAL,"IC-163, IC-164",Asymptomatic,Isolation Facility,2020-08-20,F,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
+IC-0171,,Hinaplanon,,,Iligan,22.0,Male,LOCAL,"IC-0163, IC-0164",Asymptomatic,Isolation Facility,2020-08-20,F,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0172,,Bagong Silang,,,Iligan,22.0,Female,LOCAL,IC-0165,Asymptomatic,Isolation Facility,2020-08-20,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 10:58:27.776313
 IC-0173,,Tambacan,,,Iligan,48.0,Male,LOCAL,Under Investigation,Asymptomatic,Isolation Facility,2020-08-20,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0174,,Saray,,,Iligan,55.0,Female,LOCAL,IC-0144,Asymptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
@@ -181,7 +181,7 @@ IC-0179,,Saray,,,Iligan,66.0,Female,LOCAL,IC-0117,Symptomatic,Isolation Facility
 IC-0180,,Villaverde,,,Iligan,8.0,Female,LOCAL,IC-0152,Symptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0181,,Villaverde,,,Iligan,35.0,Female,LOCAL,IC-0152,Symptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0182,,Tipanoy,,,Iligan,38.0,Female,LOCAL,IC-0147,Symptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 12:28:44.095808
-IC-0183,,Santiago,,,Iligan,54.0,Male,LOCAL,"IC-130, IC-131",Asymptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
+IC-0183,,Santiago,,,Iligan,54.0,Male,LOCAL,"IC-0130, IC-0131",Asymptomatic,Isolation Facility,2020-08-21,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0184,,Maria Cristina,,,Iligan,57.0,Female,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-22,F,T,To verify if died,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 11:24:21.017919
 IC-0185,,Tubod,,,Iligan,42.0,Male,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-22,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0186,,Sta. Filomena,,,Iligan,64.0,Male,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-22,F,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
@@ -195,8 +195,8 @@ IC-0193,,Tibanga,,,Iligan,22.0,Male,LOCAL,IC-0150,Asymptomatic,Isolation Facilit
 IC-0194,,Tubod,,,Iligan,43.0,Female,LOCAL,Under Investigation,Asymptomatic,Isolation Facility,2020-08-22,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0195,,Villaverde,,,Iligan,28.0,Male,LSI,Under Investigation,Asymptomatic,Isolation Facility,2020-08-22,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0196,,Sta. Elena,,,Iligan,42.0,Male,LOCAL,Under Investigation,Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
-IC-0197,,San Roque,,,Iligan,10.0,Female,LOCAL,"IC-165, IC-172",Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
-IC-0198,,San Roque,,,Iligan,8.0,Male,LOCAL,"IC-165, IC-172",Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
+IC-0197,,San Roque,,,Iligan,10.0,Female,LOCAL,"IC-0165, IC-0172",Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
+IC-0198,,San Roque,,,Iligan,8.0,Male,LOCAL,"IC-0165, IC-0172",Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0199,,Del Carmen,,,Iligan,29.0,Male,LOCAL,IC-0147,Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 11:07:59.860355
 IC-0200,,Tipanoy,,,Iligan,29.0,Female,LOCAL,IC-0147,Asymptomatic,Isolation Facility,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 12:28:41.78
 IC-0201,,Santiago,,,Iligan,34.0,Male,LOCAL,Under Investigation,Symptomatic,Hospital,2020-08-23,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
@@ -217,7 +217,7 @@ IC-0215,,Sta. Filomena,,,Iligan,39.0,Male,LOCAL,IC-0186,Asymptomatic,Isolation F
 IC-0216,,Tubod,,,Iligan,44.0,Male,ROF,Under Investigation,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0217,,Dalipuga,,,Iligan,22.0,Male,LSI,Under Investigation,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0218,,Sto. Rosario,,,Iligan,47.0,Female,LOCAL,Under Investigation,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
-IC-0219,,Saray,,,Iligan,74.0,Male,LOCAL,"IC-117, IC-144",Symptomatic,Hospital,2020-08-25,F,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 12:37:26.339209
+IC-0219,,Saray,,,Iligan,74.0,Male,LOCAL,"IC-0117, IC-0144",Symptomatic,Hospital,2020-08-25,F,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,rex.sacayan,2020-10-05 12:37:26.339209
 IC-0220,,Saray,,,Iligan,50.0,Female,LOCAL,IC-0117,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0221,,Saray,,,Iligan,30.0,Female,LOCAL,IC-0117,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,
 IC-0222,,Saray,,,Iligan,31.0,Male,LOCAL,IC-0117,Asymptomatic,Isolation Facility,2020-08-25,T,F,nan,Lanao del norte,F,,2020-09-22 13:16:04.183974,,

@@ -47,6 +47,34 @@ def get_word(x: str) -> str:
     )
 
 
+def pre_zero(x: str) -> str:
+
+    if str(x).startswith('IC') and len(str(x)[3:7]) == 1:
+        return str(x)[:3] + '000' + str(x)[3:]
+
+    elif str(x).startswith('IC') and len(str(x)[3:7]) == 2:
+        return str(x)[:3] + '00' + str(x)[3:]
+
+    elif str(x).startswith('IC') and len(str(x)[3:7]) == 3:
+        return str(x)[:3] + '0' + str(x)[3:]
+
+    else:
+        return x
+
+
+def clean_two_exposure(x: str) -> str:
+
+    if str(x).startswith('IC') and ',' in str(x):
+
+        fst = str(x).split(', ')[0]
+        snd = str(x).split(', ')[1]
+
+        return pre_zero(fst) + ', ' + pre_zero(snd)
+
+    else:
+        return x
+
+
 def main():
 
     # Import data
@@ -69,21 +97,12 @@ def main():
             if (str(x).startswith('IC') and str(x)[2] != '-')
             else x
         )
-        .apply(
-            lambda x: str(x)[:3] + '000' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 1
-            else x
+        .replace(
+            'IC-1746 IC-1747',
+            'IC-1746, IC-1747'
         )
-        .apply(
-            lambda x: str(x)[:3] + '00' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 2
-            else x
-        )
-        .apply(
-            lambda x: str(x)[:3] + '0' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 3
-            else x
-        )
+        .apply(pre_zero)
+        .apply(clean_two_exposure)
         .replace(
             'Work Cross Contamination',
             'Workplace Cross Contamination'
@@ -93,31 +112,10 @@ def main():
             if str(x) == 'nan'
             else x
         )
-        .replace(
-            'IC-1746 IC-1747',
-            'IC-1746, IC-1747'
-        )
     )
 
     # Cleaning: `Case Number`
-    df['Case Number'] = (
-        df['Case Number']
-        .apply(
-            lambda x: str(x)[:3] + '000' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 1
-            else x
-        )
-        .apply(
-            lambda x: str(x)[:3] + '00' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 2
-            else x
-        )
-        .apply(
-            lambda x: str(x)[:3] + '0' + str(x)[3:]
-            if str(x).startswith('IC') and len(str(x)[3:7]) == 3
-            else x
-        )
-    )
+    df['Case Number'] = df['Case Number'].apply(pre_zero)
 
     # Cleaning 'Remarks'
     df.Remarks = (
@@ -151,16 +149,9 @@ def main():
         )
     )
 
-    # Export data to csv
+        # Export data to csv
     df.to_csv('data_cleaned.csv', index=False)
 
 
 if __name__ == '__main__':
     main()
-
-
-# Unique values checker without the 'IC' patterns
-# df.Exposure = df.Exposure.apply(lambda x: np.nan if not str(x).startswith('IC') else x)
-
-# FIXME: Workplace Contamination, Facility Cross Contamination, Cross Contamination
-# FIXME: Does 'From Cebu' mean 'COVID-19 POSITIVE from Cebu' or 'Travel History: Cebu', similarly with others
