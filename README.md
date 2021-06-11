@@ -1,1 +1,1 @@
-# IIT-Dash-Cleaning
+# IIT COVID-19 Dashboard Data Cleaning
