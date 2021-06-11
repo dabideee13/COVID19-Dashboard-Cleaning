@@ -69,6 +69,21 @@ def main():
             if (str(x).startswith('IC') and str(x)[2] != '-')
             else x
         )
+        .apply(
+            lambda x: str(x)[:3] + '000' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 1
+            else x
+        )
+        .apply(
+            lambda x: str(x)[:3] + '00' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 2
+            else x
+        )
+        .apply(
+            lambda x: str(x)[:3] + '0' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 3
+            else x
+        )
         .replace(
             'Work Cross Contamination',
             'Workplace Cross Contamination'
@@ -81,6 +96,26 @@ def main():
         .replace(
             'IC-1746 IC-1747',
             'IC-1746, IC-1747'
+        )
+    )
+
+    # Cleaning: `Case Number`
+    df['Case Number'] = (
+        df['Case Number']
+        .apply(
+            lambda x: str(x)[:3] + '000' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 1
+            else x
+        )
+        .apply(
+            lambda x: str(x)[:3] + '00' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 2
+            else x
+        )
+        .apply(
+            lambda x: str(x)[:3] + '0' + str(x)[3:]
+            if str(x).startswith('IC') and len(str(x)[3:7]) == 3
+            else x
         )
     )
 
@@ -127,7 +162,5 @@ if __name__ == '__main__':
 # Unique values checker without the 'IC' patterns
 # df.Exposure = df.Exposure.apply(lambda x: np.nan if not str(x).startswith('IC') else x)
 
-# FIXME: Age (0.25, 0.4, 0.8)
 # FIXME: Workplace Contamination, Facility Cross Contamination, Cross Contamination
 # FIXME: Does 'From Cebu' mean 'COVID-19 POSITIVE from Cebu' or 'Travel History: Cebu', similarly with others
-# FIXME: Detect 'LDN' then get its neighbor
